@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  dotnet:
+    container_name: LearnDotNet8
+   
+    build: 
+      context: ./LearnDotNet8
+      dockerfile: Dockerfile
+
+    command: ["dotnet", "LearnDotNet8.dll"]
+    ports:
+      - "8000:8000"
+
+    volumes:
+      - .:/src

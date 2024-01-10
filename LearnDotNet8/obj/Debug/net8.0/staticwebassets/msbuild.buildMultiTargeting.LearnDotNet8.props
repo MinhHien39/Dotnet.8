@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\LearnDotNet8.props" />
+</Project>
